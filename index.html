@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container text-center">
@@ -17,17 +18,14 @@
             <h1>Random Color Value Generator</h1>
           </div>
           <div class="col-12 my-5">
-            <button class="button">Click to generate a color</button>
+            <button onclick="colorGen()" class="button">Click to generate a Hex color code <br> and display it</button>
           </div>
           <div class="col-12 my-5">
-            <!-- block of color will be here -->
-            <h2>Hex value <!-- will change to new hex value when button is clicked --> </h2>
+            <div id="box" class="box"></div>
+            <h2 id="head1">Hex value</h2>
           </div>
           <div class="col-12 my-5">
-            <button class="button">Click to change the text's color</button>
-          </div>
-          <div class="col-12 my-5">
-            <h2>Example text</h2> <!-- text will be customizable later -->
+            <h2 id="head2">This is what the color looks like on some text!</h2> <!-- text will be customizable later -->
           </div>
         </div>
       </div>
